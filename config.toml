@@ -1,0 +1,128 @@
+baseURL = "https://wasim.co/"
+languageCode = "en-us"
+title = "Wasim Ullah"
+googleAnalytics = "UA-129034560-1"
+min_version = "0.55.6"
+theme = "cactus"
+
+[params]
+	name = "Wasim Ullah"
+	description = "Currently, based in Dubai, I have worked as marketing director, growth hacker, full stack marketer and own proven methods to drive a business growth. "
+
+	author = "Wasim Ullah"
+	bio = "Marketing 🇦🇪"
+
+	twitter = "wsmulh"
+	facebook = "wsmulh"
+
+	enableRSS = true
+	enableToc = true
+
+	enableDisqus = true
+	disqusShortname = "WasimU"
+
+	enableSummary = true
+	# Set the value to true if use description in post front matter replace content summary
+	useDescriptionReplaceSummary = true
+
+	googleMapsAPIKey = "AIzaSyCpMFzjk85Tu75aqMbG3GLzaJSm4WbWN4k"
+
+	enableGoogleAnalytics = true
+	enableBaiduAnalytics = false
+	# Set the value to your baidu analysis code if you want to use baidu analytics
+	baiduAnalytics = 'your_baidu_analysis_code'
+	
+	enableRobotsTXT = true
+	canonifyURLs = true
+
+	enableTwitterCard = true
+	# The url for twitter card image, default is avatar.png in static/images directory
+	# twitterCardImage = "/images/twittercard.jpg"
+	
+	# Add custom assets with their paths relative to the static folder
+	customCSS = []
+	customJS  = []
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	about = ""
+	archive = ""
+	blog = ""
+	subscribe = ""
+
+	olderPosts = ""
+	newerPosts = ""
+	copyright = ""
+
+	# show latest posts in single page
+	showLatestPosts = true
+	readMore = ""
+
+	# Share
+	enableShare = false
+	tweet = ""
+	share = ""
+
+	# 404 page
+	title404 = "Page 404"
+	subtitle404 = "Come again? Or else."
+	
+	# Sharing options and author information in posts
+	aboutAuthor = "Marketing 🇦🇪"
+
+iconFont = "font-awesome"
+socialIconStyle = ""
+
+[author]
+  name = "Wasim Ullah"
+  
+ [params.publisher]
+    name = "Wasim Ullah"
+
+    [params.publisher.logo]
+      url = "/images/avatars.png"
+      width = 40
+      height = 40
+
+  [params.logo]
+    url = "/images/avatars.png"
+    width = 40
+    height = 40
+
+  [params.image]
+    url = "/images/man.jpg"
+    width = 3600
+    height = 2400
+
+[social]
+linkedin-square = "https://www.linkedin.com/in/wasim-ullah/"
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = false
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = false
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

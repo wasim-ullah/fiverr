@@ -1,0 +1,37 @@
+<script type="application/ld+json">
+   {
+      "@context":"https://schema.org",
+      "@graph":[
+         {
+            "@type":"WebSite",
+            "@id":"{{ .Permalink}}",
+            "url":"{{ .Site.BaseURL }}",
+            "name":"{{ .Title }}",
+            "potentialAction":{
+               "@type":"SearchAction",
+               "target":"{{ .Site.BaseURL }}?s={search_term_string}",
+               "query-input":"required name=search_term_string"
+            }
+         },
+         {
+            "@type":"WebPage",
+            "@id":"{{ .Permalink }}",
+            "url":"{{ .Site.BaseURL }}",
+            "inLanguage":"en",
+            "name":"{{ .Title }}",
+            "isPartOf":{
+               "@id":"{{ .Permalink }}"
+            },
+            {{ if not .PublishDate.IsZero -}}
+            "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05" | safeHTML }}",
+            {{- else if not .Date.IsZero -}}
+            "datePublished": "{{ .Date.Format "2006-01-02T15:04:05" | safeHTML }}",
+            {{- end }}
+            {{ with .Lastmod -}}
+            "dateModified": "{{ .Format "2006-01-02T15:04:05" | safeHTML }}",
+            {{- end }}
+            "description":"{{ .Title }} - {{ .Description }}"
+         }
+      ]
+   }
+</script>

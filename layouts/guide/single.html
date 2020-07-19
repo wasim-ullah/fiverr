@@ -1,0 +1,46 @@
+{{ partial "head.html" . }}
+<body>
+{{ partial "nav.html" . }}
+{{ partial "profile.html" . }}
+
+<section class="home-container guide_container">
+    <div class="guide-intro">
+        <div class="container w-container">
+            <div data-ix="new-interaction" class="page-heading small">{{ .Title }}</div>
+            <img src="{{ .Site.BaseURL }}guide/images/js-banners-new-11.svg" alt="" class="header-image">
+        </div>
+    </div>
+
+    <div class=" guide_container">
+
+        {{ with .Params.guide_menu }}
+        {{ if ge (len .) 1 }}
+            <div id="toc" class="well col-md-4 col-sm-6">
+            <ul>
+            {{ range . }}
+                <li><a href="{{ $.Site.BaseURL }}guide/growth/{{ . | urlize }}">{{  replace . "-" " "}}</a></li>
+            {{ end }}
+            </ul>
+            </div>
+            {{ end }}
+        {{ end}}
+
+        {{ .Content }}
+    </div>
+
+    {{ partial "profile.html" . }}
+    <div style="  text-align: center">
+        <h2>I teach other things</h2>
+        <p>
+            To read my handbooks&nbsp;months before they're published, subscribe. I'm releasing&nbsp;how to&nbsp;<strong>play piano</strong>,&nbsp;<strong>debate well</strong>, and&nbsp;<strong>write fiction.</strong>
+        </p>
+    </div>
+    {{ partial "email_form.html" . }}
+    
+    {{ partial "footer.html" . }}
+</section>
+
+{{ partial "sticky_menu.html" .}}
+
+{{ partial "js.html" . }}
+</body>
