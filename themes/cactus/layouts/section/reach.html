@@ -1,11 +1,13 @@
 
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		 
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 			
 
   <meta name="twitter:card" content="summary" />
@@ -31,14 +33,14 @@
 
 		
         
-        <meta property="og:title" content="Blogs">
+        <meta property="og:title" content="Contact">
         
         <meta property="og:type" content="article">
-        <meta property="article:published_time" content="2020-07-04">
+        <meta property="article:published_time" content="2018-11-08">
         <meta property="article:author" content="Wasim Ullah">
         
         <meta property="og:description" content="Currently, based in Dubai, I have worked as marketing director, growth hacker, full stack marketer and own proven methods to drive a business growth. ">
-        <meta property="og:url" content="https://wasim.co/blog/">
+        <meta property="og:url" content="https://wasim.co/reach/">
         <meta property="og:site_name" content="Wasim Ullah">
         
         
@@ -55,9 +57,9 @@
         
 
 		<meta name="generator" content="Hugo 0.55.6" />
-		<title>Blog</title>
+		<title>Contact &middot; Wasim Ullah</title>
 		<link rel="shortcut icon" href="https://wasim.co/images/favicon.ico">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://wasim.co/css/style.css">
 
 		<link rel="stylesheet" href="https://wasim.co/css/highlight.css">
 
@@ -78,9 +80,9 @@
       "@graph":[
          {
             "@type":"WebSite",
-            "@id":"https:\/\/wasim.co\/blog\/",
+            "@id":"https:\/\/wasim.co\/reach\/",
             "url":"https:\/\/wasim.co\/",
-            "name":"Blogs",
+            "name":"Contact",
             "potentialAction":{
                "@type":"SearchAction",
                "target":"https:\/\/wasim.co\/?s={search_term_string}",
@@ -89,16 +91,16 @@
          },
          {
             "@type":"WebPage",
-            "@id":"https:\/\/wasim.co\/blog\/",
+            "@id":"https:\/\/wasim.co\/reach\/",
             "url":"https:\/\/wasim.co\/",
             "inLanguage":"en",
-            "name":"Blogs",
+            "name":"Contact",
             "isPartOf":{
-               "@id":"https:\/\/wasim.co\/blog\/"
+               "@id":"https:\/\/wasim.co\/reach\/"
             },
-            "datePublished": "2020-07-04T12:30:00",
-            "dateModified": "2020-07-04T12:30:00",
-            "description":"Blogs - "
+            "datePublished": "2018-11-08T19:41:41",
+            "dateModified": "2018-11-08T19:41:41",
+            "description":"Contact - "
          }
       ]
    }
@@ -114,6 +116,82 @@
     display: table-cell;
     vertical-align: top;
 }
+
+
+.center {
+  position:absolute;
+  top: 19px;
+  right: 0px;
+  transform:translate(-30%, -50%);
+}
+nav.main-nav {
+    padding: 20px 140px 18px;
+    margin: 0 auto;
+    text-align: right;
+    z-index: 100;
+    background:bottom;
+}
+img{
+  width: 9%;
+}@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+body.dark {
+  
+  background-color: black;
+  color: white;
+
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 18px;
+    width: 45px;
+    transform: scale(1.5);
+    margin-top: -13px;
+}
+
+.label .ball {
+  background-color: #fff0;
+    border-radius: 72%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 14px;
+    width: 17px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(2px);
+}
+
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+     
 
 @media only screen and (max-width: 792px) {
     .list-header {
@@ -187,24 +265,36 @@
 	
 	</head>
 
-	   <body onload="set_style_from_cookie()"> 
-
-    <nav class="main-nav">
+<body>
+<nav class="main-nav">
 	
 	
-		<a href='../index.html'> <span class="arrow">←</span>Home</a>
-    
-  <a href='about.html'>About</a>
-  <a href='services.html'>Services</a>
-  <a class="cta" href='blog.html'>Journal</a>
+		<a href='https://wasim.co/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='https://wasim.co/about'>About</a>
+	<a href='https://wasim.co/services'>Services</a>
+	
+	
+	<a class="cta" href='https://wasim.co/blog'>Journal</a>
 	
 
 </nav>
 
-
 <div class="center">
-  <input type="checkbox" name="checkbox" id="checkbox">
+
+  <input type="checkbox" class="checkbox" id="chk" />
+  <label class="label" for="chk">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <div class="ball"></div>
+  </label>
 </div>
+
+
+
+
+
+
 <div class="profile">
     <section id="wrapper">
         <header id="header">
@@ -220,102 +310,14 @@
 
 
 
-    <section id="wrapper" class="home">
-        <ul id="post-list">
-    
-    
-        
-            <li>
-                <aside class="dates">Nov 24</aside>
-                <a href='https://wasim.co/blog/who-should-be-on-growth-team/'>
-                    What Makes An Ideal Growth Team?
-                    
-                        
-                            <h2>You don&#39;t have to hire full time professionals.</h2>
-                        
-                    
-                </a>
-            </li>
-        
-    
-    
-        
-            <li>
-                <aside class="dates">Nov 20</aside>
-                <a href='https://wasim.co/blog/netlify-cms-and-forestry/'>
-                    Open Source Netlify &amp; Forestry CMS
-                    
-                        
-                            <h2>Great platforms for individual bloggers.</h2>
-                        
-                    
-                </a>
-            </li>
-        
-    
-    
-        
-            <li>
-                <aside class="dates">Nov 16</aside>
-                <a href='https://wasim.co/blog/16-key-performance-indirectors-of-any-sales-funnel/'>
-                    16 KPIs Of Any Sales Funnel
-                    
-                        
-                            <h2>How will you measure a sales funnel progress?</h2>
-                        
-                    
-                </a>
-            </li>
-        
-    
-    
-        
-            <li>
-                <aside class="dates">Nov 9</aside>
-                <a href='https://wasim.co/blog/three-simple-tools-to-automate-growth/'>
-                    Three Simple Tools To Automate Growth
-                    
-                        
-                            <h2>How can you automate your online growth in three simple ways.</h2>
-                        
-                    
-                </a>
-            </li>
-        
-    
-    
-        
-            <li>
-                <aside class="dates">Nov 9</aside>
-                <a href='https://wasim.co/blog/growth-story-of-fortnite/'>
-                    Growth Story Of Fortnite
-                    
-                        
-                            <h2>The science behind Fortnite growth in one year.</h2>
-                        
-                    
-                </a>
-            </li>
-        
-    
-</ul>
-
-        <nav id="post-nav">
-    
-        
-        <span class="prev">
-            <a href="page2.html">
-                <span class="arrow">←</span> Newer Posts
-            </a>
-        </span>
-        
-        
-    
-</nav>
+<section id="wrapper" class="home">
+    <p><center>
+Email: wasim@hey.com<br><br>
+LinkedIn: linkedin.com/in/wasim-ullah
+</center></p>
 
 
-    </section>
-<footer id="footer">
+    <footer id="footer">
     
         <div id="social">
 
@@ -353,7 +355,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
 </footer>
 
-    <script src="https://wasim.co/js/jquery-3.3.1.min.js"></script>
+</section>
+
+<script src="https://wasim.co/js/jquery-3.3.1.min.js"></script>
 <script src="https://wasim.co/js/main.js"></script>
 <script src="https://wasim.co/js/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
@@ -374,16 +378,16 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-<script>
-const checkbox = document.getElementById('checkbox'); 
-checkbox.addEventListener('change',()=>{
+
+
+<script type="text/javascript">
+  const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
   document.body.classList.toggle('dark');
-  
 });
+
 </script>
 
 
-
-
-    </body>
-</html>
+</body>
