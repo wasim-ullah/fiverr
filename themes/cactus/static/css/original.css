@@ -1,3 +1,4 @@
+  
 /* Reset */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -8,80 +9,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0
 }
-
-/* Theme change stylesheet */
-body {
-  margin:0;
-  padding:0;
-  background:white;
-  transition: background 0.4s linear;
-}
-
-.center {
-  position:absolute;
-  top: 60px;
-  right: 0px;
-  transform:translate(-50%, -50%);
-}
-
-input[type="checkbox"] {
-  margin:10px;
-  position:relative;
-  width:60px;
-  height:10px;
-  -webkit-appearance: none;
-  background: linear-gradient(0deg, #333, #000);
-  outline: none;
-  border-radius: 20px;
-  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
-}
-body.dark{
-  background-color: black;
-  color: white;
-}
-input:checked[type="checkbox"]:nth-of-type(1) {
-  background: linear-gradient(0deg, #e67e22, #f39c12);
-  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
-}
-
-input:checked[type="checkbox"]:nth-of-type(2) {
-  background: linear-gradient(0deg, #70a1ff, #1e90ff);
-  box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
-}
-
-input[type="checkbox"]:before {
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  width:20px;
-  height:10px;
-  background: linear-gradient(0deg, #000, #6b6b6b);
-  border-radius: 20px;
-  box-shadow: 0 0 0 1px #232323;
-  transform: scale(.98,.96);
-  transition:.5s;
-}
-
-input:checked[type="checkbox"]:before {
-  left:40px;
-}
-
-input[type="checkbox"]:after{
-  content:'';
-  position:absolute;
-  top:calc(50% - 2px);
-  background: linear-gradient(0deg, #6b6b6b, #000);
-  border-radius: 50%;
-  transition:.5s;
-}
-
-input:checked[type="checkbox"]:after {
-  left:110px;
-}
-
-
-
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block
@@ -98,50 +25,10 @@ body {
     
    
 }
-/* Clickable theme change button with animation */
-
-.gWjHTB {
-    right: 50px;
-}
-
-.gWjHTB {
-    position: fixed;
-    top: 0px;
-    right: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    display: flex;
-    cursor: pointer;
-    user-select: none;
-    z-index: 101;
-    transition: padding 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-}
-
-.kdPiXS {
-    position: absolute;
-    left: 0px;
-    width: 20px;
-    height: 20px;
-    opacity: 0;
-    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-    transform: rotate(360deg);
-}
-
-.dNwwET {
-    opacity: 1;
-    transform: rotate(0deg);
-    left: 0px;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    transition: opacity 0.6s ease-out 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
-}
-
-
 .input-group .btn{
     diplay: inline-block;
     background-color: #000;
-    color: #6afdef;
+    color: white;
     padding: 6.8px;
     font-size: 12px;
     border: none;
@@ -326,7 +213,8 @@ html, body {
 
 body {
     font: 13px/1 'AvenirLight', Helvetica, Arial, sans-serif;
-    color: #666;
+    /* color: #666; */
+    color: red;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -740,7 +628,7 @@ Post List
 }
 
 #post-list li+li {
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 #post-list a {
@@ -1522,3 +1410,108 @@ div#guide_toc ul>li>ul>li:hover {
     }
 
 }
+
+
+
+
+/*
+                                                                                                                                               Custom Added Style sheet 
+*/
+
+
+
+
+
+
+/* Style switching toggle button styling */
+ * {
+ /* margin: 0;
+  padding: 0;
+  position: relative;
+ */
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+*/
+
+.b {
+  display: block;
+}
+
+.toggle {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border-radius: 100px;
+  background-color: #ddd;
+  overflow: hidden;
+  box-shadow: inset 0 0 2px 1px rgba(0,0,0,.05);
+}
+.cssBTN{
+  top: 80px;
+  right: 60px;
+}
+#t1{
+    width: 200px;
+    position: absolute;
+    right: 50px;
+    }
+#t1 td{
+    border: none;
+    text-align: right;
+}
+    
+.check {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 6;
+}
+
+
+  .check:checked ~ .track {
+    box-shadow: inset 0 0 0 20px #4bd863;
+  }
+
+  .check:checked ~ .switch {
+    right: 2px;
+    left: 22px;
+    transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    transition-property: left, right;
+    transition-delay: .05s, 0s;
+  }
+
+.switch {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  right: 22px;
+  background-color: #fff;
+  border-radius: 36px;
+  z-index: 1;
+  transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  transition-property: left, right;
+  transition-delay: 0s, .05s;
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,.05);
+  border-radius: 40px;
+}
+
